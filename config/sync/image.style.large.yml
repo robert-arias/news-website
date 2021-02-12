@@ -1,0 +1,17 @@
+uuid: 63160478-95c2-475d-805a-d9e4f70edf26
+langcode: en
+status: true
+dependencies: {  }
+name: large
+label: 'Large (768 width)'
+effects:
+  6d84ae03-ebd1-4fd5-bc42-7995b88ed423:
+    uuid: 6d84ae03-ebd1-4fd5-bc42-7995b88ed423
+    id: image_scale
+    weight: 2
+    data:
+      width: 768
+      height: null
+      upscale: true
+      retinafy: 0
+      multiplier: '2'

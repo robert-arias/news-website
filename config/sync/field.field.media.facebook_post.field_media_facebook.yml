@@ -1,0 +1,19 @@
+uuid: 08bc4b22-8320-4036-8c84-12c916388a87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_facebook
+    - media.type.facebook_post
+id: media.facebook_post.field_media_facebook
+field_name: field_media_facebook
+entity_type: media
+bundle: facebook_post
+label: 'Facebook Embed'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

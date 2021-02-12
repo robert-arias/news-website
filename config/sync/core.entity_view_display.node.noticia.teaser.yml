@@ -1,0 +1,40 @@
+uuid: d8058e38-d8bd-4fa1-b41d-3d323b465af7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.noticia.body
+    - field.field.node.noticia.field_autor
+    - field.field.node.noticia.field_categoria
+    - field.field.node.noticia.field_destacado
+    - field.field.node.noticia.field_fecha_de_publicacion
+    - field.field.node.noticia.field_imagen
+    - node.type.noticia
+  module:
+    - text
+    - user
+id: node.noticia.teaser
+targetEntityType: node
+bundle: noticia
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_autor: true
+  field_categoria: true
+  field_destacado: true
+  field_fecha_de_publicacion: true
+  field_imagen: true

@@ -1,0 +1,33 @@
+uuid: 39bcbd43-c9fa-4370-ac2a-10871c101d2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.instagram_post.field_media_oembed_instagram
+    - media.type.instagram_post
+id: media.instagram_post.default
+targetEntityType: media
+bundle: instagram_post
+mode: default
+content:
+  field_media_oembed_instagram:
+    type: string_textfield
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  status: true
+  uid: true

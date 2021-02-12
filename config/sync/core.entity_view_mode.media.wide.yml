@@ -1,0 +1,10 @@
+uuid: c3f32d2d-78e5-43e1-b438-328e9a64958e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.wide
+label: Wide
+targetEntityType: media
+cache: true

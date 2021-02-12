@@ -1,0 +1,19 @@
+uuid: c701465b-2309-4457-9d15-8a8cd2cc8bc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_twitter
+    - media.type.twitter_post
+id: media.twitter_post.field_media_twitter
+field_name: field_media_twitter
+entity_type: media
+bundle: twitter_post
+label: 'Tweet URL'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: 908a9fbd-aa5c-4450-9bfb-33fcb92b54b5
+langcode: en
+status: true
+dependencies: {  }
+id: global
+label: Global
+tags:
+  title: '[current-page:title] | [site:name]'
+  robots: 'index, follow'
+  canonical_url: '[current-page:url]'

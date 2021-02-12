@@ -1,0 +1,17 @@
+uuid: 10543983-8c79-49e1-81d8-47debb2c1916
+langcode: en
+status: true
+dependencies: {  }
+name: news_230x500
+label: 'News (230x500)'
+effects:
+  8ffa3d51-989f-489f-af57-08f0ef66f428:
+    uuid: 8ffa3d51-989f-489f-af57-08f0ef66f428
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 230
+      height: 500
+      anchor: center-center
+      retinafy: 0
+      multiplier: '2'

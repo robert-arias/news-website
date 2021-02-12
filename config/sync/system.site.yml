@@ -1,0 +1,15 @@
+name: 'Robert Noticias'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /home
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+mail_notification: ''
+_core:
+  default_config_hash: kFLSOjaWFfawAxFTZclDYQwVzpfwoxLsHWeeKzzAUVo
+uuid: 7abb2f44-80df-4cac-bfb5-b5cf761397be

@@ -1,0 +1,29 @@
+uuid: d5295ccf-f7ee-491c-a4af-1f4bf1efb1d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria
+    - node.type.noticia
+    - taxonomy.vocabulary.noticias
+id: node.noticia.field_categoria
+field_name: field_categoria
+entity_type: node
+bundle: noticia
+label: Categoría
+description: 'Categoría de la imagen.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      noticias: noticias
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
