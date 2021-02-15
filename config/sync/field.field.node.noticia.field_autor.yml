@@ -1,12 +1,10 @@
-uuid: 13136ee5-6c3b-455a-a211-d0fc381c1cd0
+uuid: b352145f-b1c0-4499-bba0-7d58ba5f43e0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_autor
     - node.type.noticia
-  module:
-    - text
 id: node.noticia.field_autor
 field_name: field_autor
 entity_type: node
@@ -18,4 +16,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: string

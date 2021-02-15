@@ -38,12 +38,12 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_autor:
-    weight: 123
+    weight: 128
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
+    type: string_textfield
     region: content
   field_categoria:
     weight: 125

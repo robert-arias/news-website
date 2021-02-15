@@ -30,10 +30,11 @@ content:
     region: content
   field_autor:
     weight: 3
-    label: hidden
-    settings: {  }
+    label: above
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_categoria:
     weight: 5
