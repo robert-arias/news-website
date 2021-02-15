@@ -9,11 +9,9 @@ dependencies:
     - field.field.node.noticia.field_destacado
     - field.field.node.noticia.field_fecha_de_publicacion
     - field.field.node.noticia.field_imagen
-    - image.style.news_230x500
     - node.type.noticia
   module:
     - datetime
-    - svg_image
     - text
     - user
 id: node.noticia.default
@@ -64,17 +62,13 @@ content:
     type: datetime_default
     region: content
   field_imagen:
+    type: entity_reference_entity_view
     weight: 1
     label: hidden
     settings:
-      image_style: news_230x500
-      image_link: ''
-      svg_render_as_image: true
-      svg_attributes:
-        width: null
-        height: null
+      view_mode: news
+      link: false
     third_party_settings: {  }
-    type: image
     region: content
   links:
     weight: 0

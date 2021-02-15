@@ -1,0 +1,34 @@
+uuid: 6d6004d4-7910-4d2c-9e7e-5550e28b1416
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.news
+    - field.field.media.image.field_media_image
+    - image.style.news_230x500
+    - media.type.image
+  module:
+    - svg_image
+id: media.image.news
+targetEntityType: media
+bundle: image
+mode: news
+content:
+  field_media_image:
+    label: hidden
+    weight: 0
+    settings:
+      image_style: news_230x500
+      image_link: content
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true
