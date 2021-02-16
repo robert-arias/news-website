@@ -1,0 +1,28 @@
+uuid: 7e9afe29-69e3-4e2b-9717-f1fdf9022e07
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - user
+  theme:
+    - bartik
+id: userlogin
+theme: bartik
+region: secondary_menu
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
