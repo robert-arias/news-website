@@ -8,7 +8,7 @@ dependencies:
     - image.style.medium
     - media.type.remote_video
   module:
-    - image
+    - svg_image
 _core:
   default_config_hash: v6vxXxNCXyN-5w-vM8JxedKjnD5Qd8NxsMmXha0lPnk
 id: media.remote_video.media_library
@@ -28,5 +28,7 @@ content:
 hidden:
   created: true
   field_media_oembed_video: true
+  langcode: true
   name: true
+  search_api_excerpt: true
   uid: true

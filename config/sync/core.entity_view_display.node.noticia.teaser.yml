@@ -38,3 +38,5 @@ hidden:
   field_destacado: true
   field_fecha_de_publicacion: true
   field_imagen: true
+  langcode: true
+  search_api_excerpt: true
