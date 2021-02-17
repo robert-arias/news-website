@@ -52,6 +52,7 @@ module:
   responsive_image: 0
   retina_images: 0
   search_api: 0
+  search_api_autocomplete: 0
   search_api_solr: 0
   seckit: 0
   shs: 0
