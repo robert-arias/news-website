@@ -53,7 +53,18 @@ id: busqueda_de_noticias
 name: 'Búsqueda de noticias'
 description: ''
 read_only: false
-field_settings: {  }
+field_settings:
+  aggregated_field:
+    label: 'Aggregated field'
+    property_path: aggregated_field
+    type: string
+    configuration:
+      type: union
+      fields:
+        - 'entity:node/body'
+        - 'entity:node/field_categoria'
+        - 'entity:node/field_fecha_de_publicacion'
+        - 'entity:node/title'
 datasource_settings:
   'entity:node':
     bundles:
