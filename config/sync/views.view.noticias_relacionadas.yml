@@ -249,18 +249,18 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
+        view_node:
+          id: view_node
+          table: node
+          field: view_node
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
-            alter_text: true
-            text: '<a href="/noticias?categoria={{ arguments.tid }}">Ver más</a>'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -296,8 +296,12 @@ display:
           empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: false
-          plugin_id: custom
+          hide_alter_empty: true
+          text: 'Ver noticia'
+          output_url_as_text: false
+          absolute: false
+          entity_type: node
+          plugin_id: entity_link
       filters:
         status:
           value: '1'
@@ -424,6 +428,11 @@ display:
           reduce_duplicates: true
           plugin_id: taxonomy_index_tid
       display_extenders: {  }
+      use_more: true
+      use_more_always: true
+      use_more_text: 'Ver más'
+      link_url: 'noticias?categoria={{ raw_arguments.tid }}'
+      link_display: custom_url
     cache_metadata:
       max-age: -1
       contexts:
