@@ -7,6 +7,7 @@ label: Editor
 weight: -6
 is_admin: null
 permissions:
+  - 'access content overview'
   - 'access toolbar'
   - 'create noticia content'
   - 'edit any noticia content'
