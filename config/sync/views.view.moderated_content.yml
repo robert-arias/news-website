@@ -2,10 +2,13 @@ uuid: f3de9bb0-752e-4738-8eb3-c60385b735e2
 langcode: en
 status: true
 dependencies:
+  config:
+    - workflows.workflow.creacion_noticias
   enforced:
     module:
       - content_moderation
   module:
+    - content_moderation
     - node
     - user
 _core:
@@ -725,7 +728,7 @@ display:
           admin_label: ''
           operator: 'not in'
           value:
-            editorial-published: editorial-published
+            creacion_noticias-published: creacion_noticias-published
           group: 1
           exposed: false
           expose:
@@ -734,6 +737,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -741,8 +746,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -811,7 +814,8 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:workflow_list'
   moderated_content:
     display_plugin: page
     id: moderated_content
@@ -830,4 +834,5 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:workflow_list'
