@@ -22,19 +22,29 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_imagen:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: above
+    settings:
+      view_mode: small
+      link: false
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_autor: true
   field_categoria: true
   field_destacado: true
   field_fecha_de_publicacion: true
-  field_imagen: true
+  langcode: true
+  search_api_excerpt: true

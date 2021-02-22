@@ -1,0 +1,47 @@
+uuid: 17835900-4e28-4427-8355-c6ef94eb47a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.busqueda_de_noticias
+    - views.view.noticias_con_solr
+  module:
+    - views
+    - search_api_autocomplete
+    - search_api_solr
+id: noticias_con_solr
+label: 'Noticias con solr'
+index_id: busqueda_de_noticias
+suggester_settings:
+  live_results:
+    fields: {  }
+    view_modes:
+      'entity:node':
+        noticia: ''
+  server:
+    fields: {  }
+  search_api_solr_suggester:
+    search_api_solr/site_hash: 1
+    search_api/index: busqueda_de_noticias
+    drupal/langcode: any
+suggester_weights:
+  live_results: -49
+  server: -50
+  search_api_solr_suggester: -47
+suggester_limits:
+  live_results: 10
+  server: 10
+  search_api_solr_suggester: 10
+search_settings:
+  'views:noticias_con_solr':
+    displays:
+      default: false
+      selected:
+        - page_1
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  autosubmit: true
+  submit_button_selector: ':submit'
+  delay: null

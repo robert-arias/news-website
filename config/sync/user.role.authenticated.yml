@@ -10,4 +10,5 @@ weight: -9
 is_admin: false
 permissions:
   - 'access content'
+  - 'use search_api_autocomplete for noticias_con_solr'
   - 'view media'

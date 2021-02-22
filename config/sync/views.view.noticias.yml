@@ -7,9 +7,11 @@ dependencies:
     - field.storage.node.field_imagen
     - node.type.noticia
     - system.menu.main
+    - taxonomy.vocabulary.noticias
   module:
     - datetime
     - node
+    - taxonomy
     - text
     - user
 id: noticias
@@ -307,14 +309,6 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_imagen_title:
-          id: field_imagen_title
-          table: node__field_imagen
-          field: field_imagen_title
-          plugin_id: string
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
         field_fecha_de_publicacion_value:
           id: field_fecha_de_publicacion_value
           table: node__field_fecha_de_publicacion
@@ -408,6 +402,54 @@ display:
             title: title
             body: body
           plugin_id: combine
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_op
+            label: 'Buscá por categoría'
+            description: ''
+            use_operator: false
+            operator: tid_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: categoria
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: noticias
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -439,6 +481,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -463,6 +506,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
