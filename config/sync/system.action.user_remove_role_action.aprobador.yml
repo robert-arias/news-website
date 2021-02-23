@@ -1,0 +1,14 @@
+uuid: 489c94ae-4039-4c23-8d9a-4944bcf740c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.aprobador
+  module:
+    - user
+id: user_remove_role_action.aprobador
+label: 'Remove the Aprobador role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: aprobador

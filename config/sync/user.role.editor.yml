@@ -1,0 +1,15 @@
+uuid: 27366d2b-867f-49b0-acbc-106be69a9081
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: -6
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'create noticia content'
+  - 'edit any noticia content'
+  - 'use creacion_noticias transition create_new_draft'
+  - 'view the administration theme'

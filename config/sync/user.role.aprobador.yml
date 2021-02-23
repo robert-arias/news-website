@@ -1,0 +1,22 @@
+uuid: baea68c4-1316-475a-a259-1f87d083a4d4
+langcode: en
+status: true
+dependencies: {  }
+id: aprobador
+label: Aprobador
+weight: -5
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'create noticia content'
+  - 'delete any noticia content'
+  - 'delete own noticia content'
+  - 'edit any noticia content'
+  - 'edit own noticia content'
+  - 'use creacion_noticias transition create_new_draft'
+  - 'use creacion_noticias transition publish'
+  - 'use creacion_noticias transition unpublish'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view the administration theme'

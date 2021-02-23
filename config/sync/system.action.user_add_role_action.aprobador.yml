@@ -1,0 +1,14 @@
+uuid: eea3bc96-e02a-486c-b523-4bb081cdfc2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.aprobador
+  module:
+    - user
+id: user_add_role_action.aprobador
+label: 'Add the Aprobador role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: aprobador
